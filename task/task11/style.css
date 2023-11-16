@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.box1 { 
+    display: flex; 
+    flex-direction: column;   
+    justify-content: space-between !important;
+    
+    
+    grid-area: a1b1; }
+.box2 { grid-area: a2; }
+.box3 { grid-area: a3; }
+.box4 { grid-area: b2; }
+.box5 { grid-area: b3 }
+.box6 { grid-area: c1 }
+.box7 { grid-area: c2 }
+.box8 { grid-area: c3 }
+.maincontainer{
+    margin: 50px 100px;
+    
+}
+.container {
+    margin: 0px 50px;
+    display: grid;
+    height: 80vh;
+
+    grid-template-areas:
+  'a1b1 a2 a3 '
+  'a1b1 b2 b3'
+  'c1  c2  c3';
+  background-color: #2196F3;
+}
+.container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 2px 2px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    background-color: darkcyan;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .container {
+        margin: 0px 50px;
+        display: grid;
+        height: 80vh;
+    
+        grid-template-areas:
+      'a1b1 a2  '
+      'a1b1 a3  '
+      'b2 b3 '
+      'c1 c2'
+        'c3 c3';
+      background-color: #6e21f3;
+    }
+    .container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        margin: 2px 2px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(196, 212, 17);
+        justify-content: center;
+      }
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .container {
+        margin: 0px 50px;
+        display: grid;
+        height: 80vh;
+    
+        grid-template-areas:
+      'a1b1   '
+      ' a2  '
+      ' a3  '
+      'b2  '
+      ' b3 '
+      'c1 '
+      ' c2'
+        ' c3';
+      background-color: #33f321;
+    }
+    .container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        margin: 2px 2px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(196, 212, 17);
+        justify-content: center;
+      }
+    
+  }
+  html {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+  }
+  body::-webkit-scrollbar {
+    width: 11px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }

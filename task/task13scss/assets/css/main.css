@@ -1,0 +1,43 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;text-decoration:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}.navbar{display:flex;justify-content:space-around;padding:20px 0;background-color:#f0f8ff}.navbar .firstlogo{font-size:20px}.navbar .navbaritems{display:flex;align-items:center;width:300px;justify-content:space-around !important}.start_bootstrap{background-image:url("../../img/bg-masthead.jpg");min-height:90vh;display:flex;flex-direction:column}.start_bootstrap .main_header{width:100%;display:flex;flex-direction:column;align-items:center}.start_bootstrap .main_header h1{margin-top:100px;font-size:60px;font-weight:bold;color:#000}.start_bootstrap .main_header hr{margin-top:26px;width:50px;color:#ff4500;height:2px;background-color:#ff4500}.start_bootstrap .main_header p{font-size:20px;font-weight:300;opacity:100%;color:#fff;padding-bottom:30px;padding-top:20px;text-align:center}.start_bootstrap .main_header .btn{margin-top:20px;display:flex;justify-content:center;align-items:center;text-align:center;background-color:#ff4500;color:#f0f8ff;width:180px;height:60px;border-radius:26px;transition:.5s}.start_bootstrap .main_header .btn:hover{background-color:#ec6b3c}.What_We_Offer_bg_oringe{width:100%;min-height:50vh;background-color:#ff4500;display:flex;justify-content:center;align-items:center}.What_We_Offer_bg_oringe .header{display:flex;flex-direction:column;justify-content:center;align-items:center}.What_We_Offer_bg_oringe .header h2{font-size:30px;font-weight:bold;color:#f0f8ff}.What_We_Offer_bg_oringe .header hr{margin-top:26px;width:50px;color:#f0f8ff;height:2px;background-color:#f0f8ff}.What_We_Offer_bg_oringe .header p{font-size:20px;font-weight:300;opacity:70%;padding-bottom:30px;color:#f0f8ff;padding-top:20px;text-align:center}.What_We_Offer_bg_oringe .header .btn{display:flex;justify-content:center;align-items:center;text-align:center;color:#000;background-color:#f0f8ff;width:180px;height:60px;border-radius:26px;transition:.5s}.What_We_Offer_bg_oringe .header .btn:hover{background-color:#7598b7}.At_Your_Service{width:100%;min-height:70vh;display:flex;justify-content:center;align-items:center}.At_Your_Service .header{margin-top:100px;display:flex;flex-direction:column;align-items:center}.At_Your_Service .header h2{font-size:50px;font-weight:bold;color:#000}.At_Your_Service .header hr{margin-top:26px;width:50px;color:#ff4500;height:2px;background-color:#ff4500}.At_Your_Service .header .logos{margin:100px 0;display:flex;justify-content:space-between}.At_Your_Service .header .logos .box1{display:flex;flex-direction:column;align-items:center;padding:0 20px}.At_Your_Service .header .logos .box1 .logo{display:flex;justify-content:center;align-items:center;width:100px;height:100px;border-radius:50%;background-color:#f0f8ff}.At_Your_Service .header .logos .box1 h3{font-size:22px;color:#000}.At_Your_Service .header .logos .box1 p{margin-top:10px;font-size:18px;font-weight:bold;opacity:80%;color:#000;text-align:center}/*# sourceMappingURL=main.css.map */px;
+  font-weight: bold;
+  color: black;
+}
+.At_Your_Service .header hr {
+  margin-top: 26px;
+  width: 50px;
+  color: orangered;
+  height: 2px;
+  background-color: orangered;
+}
+.At_Your_Service .header .logos {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.At_Your_Service .header .logos .box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.At_Your_Service .header .logos .box1 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+.At_Your_Service .header .logos .box1 h3 {
+  font-size: 22px;
+  color: black;
+}
+.At_Your_Service .header .logos .box1 p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 80%;
+  color: black;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

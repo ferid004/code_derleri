@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    
+    display: flex;
+   justify-content: space-around;
+   align-self: center;
+    
+
+}
+.navitem{
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+.logo{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Poppins, Arial, sans-serif;
+    
+}
+
+a{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+}
+.main{
+    background: #fafafa;
+}
+.container{
+    
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    margin: 0px 30px;
+    flex-direction: column;
+}
+
+.blog{
+    
+    font-size: 100px;
+    font-family: "Great Vibes", cursive;
+    color: #c8a97e;
+}
+.post{
+    margin-top: -30px;
+    font-size: 50px;
+    color: #333333;
+    font-weight: 900;
+}
+.box{
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+}
+.bigbox{
+    display: flex;
+    
+    
+}
+.boximg{
+    width: 300px;
+    height: 200px;
+}
+.imglower{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

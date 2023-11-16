@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+svg.box{
+   
+    width:100px;
+    height: 100px;
+
+
+    animation: na5;
+    background: image url('icons8-dvd-50.png');
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+    
+
+}
+@keyframes na5{
+    
+    0%   {background-color: red;      transform: translateY(0) translateX(0) }
+    20%  {background-color: blue;      transform: translateY(520px) translateX(800px)   }
+     40%  {background-color: rgb(255, 0, 187);  transform: translateY(0px) translateX(1270px)   }
+   65%  {background-color: yellow;  transform: translateY(520px) translateX(0px)   }
+    100% {background-color: green;   transform: translateY(0) translateX(800px)   }
+     
+}

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* birinci section */
+img{
+    width: 100%;
+    height: auto;
+    
+}
+.Welcome{
+    background-image:  url("/assets/img/car.jpg");
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat    ;
+    background-size:  cover;
+   }
+   
+   h1{
+
+       
+    padding-top: 100px ;
+    padding-bottom: 70px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    width:max-content ;
+}
+.elmir{
+    
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    width: min-content;
+    
+    width: 400px;
+   
+    height: auto; 
+}
+
+button{
+    border-radius: 20px;
+    
+    text-align: center;
+    padding: 10px 40px;
+    
+    color: aliceblue;
+    
+    background: transparent;
+}
+.esli{
+    text-align: center;
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+button>p{
+    font-size: 24px;
+}
+
+/* birnici section bitdi */
+
+/* ikici hisseye giris */
+.best_food{
+   background-color: #D7E5CA;
+}
+.section-2{
+   color: black;
+   font-size: 45px;
+   margin: auto;
+}
+.main_p{
+   color: black;
+   font-size: 25px;
+   padding: auto;
+   text-align: center;
+}
+/*  kart yartmaqa cailsisram */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 70px;
+    min-height: 0px;
+    
+}
+
+.box {
+    text-align: center;
+    padding: 30px;
+    background-color: aliceblue;
+
+}
+
+.box img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.box p {
+    margin-top: 10px;
+    width: 350px;
+    font-size: 24px;
+    font-family: thin;
+}
+.box>.psize{
+    font-size: 30px;
+    
+}
+/* ============== */
+
+
+
+/* 
+########################################
+kohne kod 
+####################################### */
+/* .main_div{
+    display: inline;
+    font-size: 20px;
+    margin: 10px;
+    width: 100px ;
+    
+}
+.hoy{
+    margin: auto;
+    text-align: center
+}
+.ferid{
+    width: 300px;
+    
+
+
+} */

@@ -1,0 +1,129 @@
+
+bu ternerynin kodu
+
+const arr = [1, 2,3, 4,5, 6,7, 8,9];
+const x = 9;
+function ternarySearch(arr, left, right, x) {
+    if (right >= left) {
+        const mid1 = left + Math.floor((right - left) / 3);
+        const mid2 = mid1 + Math.floor((right - left) / 3);
+        if (arr[mid1] === x) {
+            return mid1;
+        }
+        if (arr[mid2] === x) {
+            return mid2;
+        }
+        if (x < arr[mid1]) {
+            return ternarySearch(arr, left, mid1 - 1, x);
+        }
+        if (x > arr[mid2]) {
+            return ternarySearch(arr, mid2 + 1, right, x);
+        }
+        return ternarySearch(arr, mid1 + 1, mid2 - 1, x);
+    }
+    return -1;
+}
+
+const result = ternarySearch(arr, 0, arr.length - 1, x);
+if (result === -1) {
+    console.log("bu elelmet yoxdur");
+} else {
+    console.log(`elemet var və indexsi: ${result}`);
+}
+
+
+ bu da ternerynin izahı
+
+Ternary axtarış alqoritmi, düzülmüş bir massivdə müəyyən bir elementi tapmaq üçün istifadə edilən bir bölmə və hakimiyyət alqoritması növüdür.
+İşləmə quruluşunu daha yaxşı anlamaq üçün aşağıdakı addımları izləyək:
+
+1. İlk addımda, massivin ortasında iki nöqtə hesablanır: `mid1` və `mid2`. Massiv üç bərabər hissəyə böyünür.
+Bu proses `left` və `right` aralığını üç bərabər hissəyə böyünür.
+
+2. Sonra, alqoritma bu üç orta nöqtəni yoxlayır: `mid1`, `mid2`, və axtardığınız element `x`.
+
+3. Əgər `arr[mid1]` və ya `arr[mid2]`, axtardığınız element `x` ilə bərabərdirsə, axtardığınız element tapılmış deməkdir və əlaqəli indeksi qaytarır.
+
+4. Əgər `x`, `arr[mid1]`-dən kiçikdirsə, alqoritma sol tərəfi yani `left` ilə `mid1-1` aralığını nəzərdən keçirir, çünki `x`, bu sahədə ola bilər.
+
+5. Əgər `x`, `arr[mid2]`-dən böyükdürsə, alqoritma sağ tərəfi yani `mid2+1` ilə `right` aralığını nəzərdən keçirir, çünki `x`, bu sahədə ola bilər.
+
+6. Yukarıdakı şərtlər heç biri yerinə yetmirsə, axtardığınız element ən çox tərəf olan yani `mid1+1` ilə `mid2-1` aralığında olur. Bu sahədə axtarış davam edir.
+
+**Ən Yaxşı Hallarda Zaman Tələyi (Best Case Time Complexity):** Ən yaxşı hallarda, axtardığınız element doğrudan orta yani `mid1` və ya `mid2` indeksindədir. 
+Bu halda alqoritma sadəcə bir neçə müqayisə edir və karmaşıqlığı O(1)'dir, yəni sabit bir vaxt alır.
+
+**Ən Pis Hallarda Zaman Tələyi (Worst Case Time Complexity):** Ən pis hallarda, axtardığınız element massivin hər iki tərəfində də yoxdur və
+ bu səbəbdə alqoritma bütün sahələri yoxlamaq məcburiyyətindədir. Ternary axtarış, hər addımda verini üçdə birini tərəfə atdığı üçün bu halda 
+logarifmik bir karmaşıqlığa sahibdir. Logaritmanın əsnafı 3-dür, bu səbəbdə karmaşıqlıq O(log3N) və ya O(log N) kimi ifadə edilir.
+ Yəni, hər bir addımda üçdə birini çıxardığı üçün digər axtarış alqoritmalardan daha sürətli işləyir.
+
+
+bu radixin kodu
+
+const arr = [170, 45, 75, 90, 802, 24, 2, 66];
+const sortedArr = radixSort(arr);
+function findMax(arr) {
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+function radixSort(arr) {
+    const maxNum = findMax(arr);
+    const maxDigits = maxNum.toString().length;
+    for (let i = 0; i < maxDigits; i++) {
+        const buckets = Array.from({ length: 10 }, () => []);
+        for (let j = 0; j < arr.length; j++) {
+            const num = arr[j];
+            const digit = Math.floor(num / Math.pow(10, i)) % 10;
+            buckets[digit].push(num);
+        }
+        arr = [].concat(...buckets);
+    }
+    return arr;
+}
+console.log("Sıralanmış Dizi: ", sortedArr);
+
+
+
+buda radixin izahı
+
+Bu JavaScript kodu, radix sıralama algoritması ilə işləyir. Radix sıralama, rəqəmləri onluq sistemdə bölməklə sıralama aparır.
+ İşleyişini anlamaq üçün aşağıdakı addımları izləyə bilərik:
+
+1. İlk addımda, `findMax` adlı köməkçi bir funksiya təyin olunur. Bu funksiya, bir massivin içərisindəki ən böyük elementi tapır.
+ Bu, hansı rəqəmlərin istifadə edilməli olduğunu müəyyən etmək üçün vacibdir.
+
+2. `radixSort` adlı əsas sıralama funksiyası təyin olunur. İlk olaraq, massivdəki ən böyük rəqəmi tapır və bu rəqəmin rəqəm sayını hesablayır.
+ Məsələn, 170-in 3 rəqəmi var.
+
+3. Sonra, hər bir rəqəm üçün sıralama aparılır. Dövr, ən böyük rəqəmin rəqəm sayısı qədər işləyir. Hər addımda,
+ 0-dan 9-a qədər olan rəqəmlərə sahib "küvə" adlanan müvəqqəti massivlər yaradılır.
+
+4. Massivdəki hər rəqəm, bu anki rəqəmi əsas götürərək bir küvəyə atanır. Məsələn, 170 rəqəmi birinci addımda yani birinci rəqəmə görə küvəyə 0 atanır.
+
+5. Küvələrdəki rəqəmlər sırayla birləşdirilir və yeni bir massiv yaradılır. Bu, bu anki rəqəmə görə sıralanmış bir massivi təmsil edir.
+
+6. Hər addımın sonunda, massivin yeni düzəlişlənmiş versiyası istifadə edilir və bir sonrakı rəqəmə keçilir. Əməliyyat rəqəm sayı qədər təkrarlanır.
+
+7. Nəticə olaraq, massiv tamamilə sıralanmış forma çatır.
+
+Bu kod, rəqəmləri hər bir rəqəmə görə sıralayaraq rəqəmləri tamamilə sıralanmış bir massivə çevirir.
+ Radix sıralama, rəqəmlərin böyüklüyünə baxmayaraq effektiv bir sıralama alqoritmasıdır.
+
+Ən Yaxşı Hallarda Zaman Mürəkkəblik (Best Case Time Complexity): Ən yaxşı hallarda radix sıralama sabit bir vaxt mürəkkəbliliyinə sahibdir və O(NK) kimi ifadə edilir,
+ burada N, sıralanacaq elementlərin sayısıdır və K, hər elementin maksimum r mərtəbəli olduğu haldir.
+
+Ən Pis Hallarda Zaman Mürəkkəblik (Worst Case Time Complexity): Ən pis hallarda radix sıralama O(NK) mürəkkəbliliyinə sahibdir,
+ burada yenidə N sıralanacaq elementlərin sayısıdır və K, hər elementin maksimum r mərtəbəli olduğu haldir.
+
+Burada K, r və N aşağıdakıları ifadə edir:
+
+K: Radix sıralamanın əsasını təşkil edən radix və ya əsas sistemin sayını ifadə edir. Məsələn, onlu sistemdə K=10-dur.
+r: Hər bir elementin maksimum mərtəbə sayını ifadə edir. Məsələn, 170-nin 3 mərtəbəsi var (r=3).
+N: Sıralanacaq elementlərin sayısını ifadə edir.
+Radix sıralama, xüsusilə böyük rəqəmlərin sıralanması üçün effektivdir və həmişə sabit vaxt mürəkkəbliliyinə sahib olduğu ən yaxşı hallarda işə salınır. 

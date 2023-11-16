@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+img{
+    width: 100%;
+}
+
+nav{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 72px;
+    background-color: aqua;
+}
+.navbartext{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.hamburger{
+    margin-right: 20px;
+    width: 30px;
+}

@@ -1,0 +1,43 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 72px;
+    border: 1px solid   ;
+
+}
+
+.ul{
+    display: flex;
+    gap: 111px;
+
+}
+.hoverfekt{
+    display: block;
+    position: relative;
+}
+
+.hoverfekt:hover .submenu{
+    background-color: aquamarine;
+    gap: 21px;
+padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+.submenu{
+    
+display: none;
+}

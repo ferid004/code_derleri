@@ -1,0 +1,34 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+}
+.bg{
+    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.c{
+    background-color: aquamarine;
+    border:  2px solid black;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    overflow: auto;
+    
+}
+.a{
+    margin-top: 10px;
+}
+.c:hover{
+    box-shadow: rgb(38, 57, 77) 0px 30px 30px -10px;
+}
+.i{
+    background-color: aquamarine;
+}

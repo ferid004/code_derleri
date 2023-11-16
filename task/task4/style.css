@@ -1,0 +1,348 @@
+/* .m{
+    margin: 30px;
+    position: relative;
+
+}
+
+
+
+.a{ 
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.b{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: green;
+    left: 150px;
+    top: -20px;
+}
+.c{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    left: -20px;
+    top: -180px;
+}
+.d{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    left: -150px;
+    bottom: -300px;
+} */
+
+.pic{
+    position: relative;
+    left: 200px;
+    width: 70px;
+    height: 70px;
+    background-color: aquamarine;
+    
+}
+
+.face{
+    left: 300px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    
+}
+.leye{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: black;
+    left: 25px;
+    top: 30px;
+}
+.reye{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: black;
+    right: 25px;
+    top: 30px;
+}
+.mouth{
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    left: 30px;
+    background-color: black;
+    bottom: 30px;
+    border-radius: 20px;    
+}
+
+.body{
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    left: 300px;
+    background-color: black;
+    top: 120px;
+    border-radius: 20px;    
+}
+.boton1{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    right: 40px;
+    top: 30px;
+}
+.boton2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    right: 40px;
+    top: 90px;
+}
+.boton3{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    right: 40px;
+    top: 160px;
+}
+.handr{
+    position: absolute;
+    width:200px;
+    height: 20px;
+    left: -220px;
+    background-color: black;
+    top: 5px;
+    border-radius: 20px;    
+}
+.handl{
+    position: absolute;
+    width:200px;
+    height: 20px;
+    right: -220px;
+    background-color: black;
+    top: 5px;
+    border-radius: 20px;    
+}
+.legr{
+    position: absolute;
+    width:20px;
+    height: 200px;
+    right: -35px;
+    background-color: black;
+    top: 270px;
+    border-radius: 20px;    
+}
+.legl{
+    position: absolute;
+    width:20px;
+    height: 200px;
+    left: -35px;
+    background-color: black;
+    top: 270px;
+    border-radius: 20px;    
+}
+.foodr{
+    position: absolute;
+    width:70px;
+    height: 20px;
+    right: -120px;
+    background-color: black;
+    bottom: -190px;
+    border-radius: 20px; 
+}
+.foodl{
+    position: absolute;
+    width:70px;
+    height: 20px;
+    left: -120px;
+    background-color: black;
+    bottom: -190px;
+    border-radius: 20px; 
+}
+.flower{
+    position: absolute;
+    width:15px;
+    height: 80px;
+    right: -10px;
+    background-color: rgb(17, 218, 10);
+    bottom: -10px;
+    border-radius: 20px;
+
+}
+.box{
+    position: absolute;
+    width:45px;
+    height: 45px;
+    right: -12px;
+    background-color: rgb(218, 45, 10);
+    bottom: 60px;
+    border-radius: 20px;
+
+}
+
+.pic:hover  { 
+ 
+    .face{
+        left: 300px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: yellow;
+        top: 10px;
+        
+    }
+    .leye{
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: black;
+        left: 25px;
+        top: 30px;
+    }
+    .reye{
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: black;
+        right: 25px;
+        top: 30px;
+    }
+    .mouth{
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        left: 30px;
+        background-color: black;
+        bottom: 30px;
+        border-radius: 20px;    
+    }
+    
+    .body{
+        position: absolute;
+        width: 100px;
+        height: 300px;
+        left: 300px;
+        background-color: black;
+        top: 140px;
+        border-radius: 20px;    
+    }
+    .boton1{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        right: 40px;
+        top: 30px;
+    }
+    .boton2{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        right: 40px;
+        top: 90px;
+    }
+    .boton3{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        right: 40px;
+        top: 160px;
+    }
+    .handr{
+        position: absolute;
+        width:200px;
+        height: 20px;
+        left: -220px;
+        background-color: black;
+        top: 25px;
+        border-radius: 20px;    
+    }
+    .handl{
+        position: absolute;
+        width:200px;
+        height: 20px;
+        right: -220px;
+        background-color: black;
+        top: 25px;
+        border-radius: 20px;    
+    }
+    .legr{
+        position: absolute;
+        width:20px;
+        height: 200px;
+        right: -35px;
+        background-color: black;
+        top: 290px;
+        border-radius: 20px;    
+    }
+    .legl{
+        position: absolute;
+        width:20px;
+        height: 200px;
+        left: -35px;
+        background-color: black;
+        top: 290px;
+        border-radius: 20px;    
+    }
+    .foodr{
+        position: absolute;
+        width:70px;
+        height: 20px;
+        right: -120px;
+        background-color: black;
+        bottom: -190px;
+        border-radius: 20px; 
+    }
+    .foodl{
+        position: absolute;
+        width:70px;
+        height: 20px;
+        left: -120px;
+        background-color: black;
+        bottom: -190px;
+        border-radius: 20px; 
+    }
+    .flower{
+        position: absolute;
+        width:15px;
+        height: 80px;
+        right: -10px;
+        background-color: rgb(17, 218, 10);
+        bottom: -10px;
+        border-radius: 20px;
+    
+    }
+    .box{
+        position: absolute;
+        width:45px;
+        height: 45px;
+        right: -12px;
+        background-color: rgb(218, 45, 10);
+        bottom: 60px;
+        border-radius: 20px;
+    
+    }
+}
+
